@@ -1,6 +1,6 @@
-require 'ap'
-
 # https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/train/ruby
+
+require 'ap'
 
 def count_positives_sum_negatives(lst)
   count = 0
