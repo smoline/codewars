@@ -1,3 +1,5 @@
+# https://www.codewars.com/kata/opposites-attract/train/ruby
+
 require 'ap'
 
 # Opposites Attract
