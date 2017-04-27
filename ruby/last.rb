@@ -3,6 +3,8 @@
 require 'ap'
 
 def last(*list, x)
+  ap "list = #{list}"
+  ap "X = #{x}"
   case list.empty?
   when true
     case x
