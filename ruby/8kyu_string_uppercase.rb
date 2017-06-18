@@ -1,4 +1,4 @@
-# https://www.codewars.com/kata/is-the-string-uppercase/train/ruby
+# https://www.codewars.com/kata/is-the-string-uppercase
 
 class String
   def is_upcase?

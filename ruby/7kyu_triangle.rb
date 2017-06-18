@@ -1,4 +1,4 @@
-# https://www.codewars.com/kata/is-this-a-triangle/train/ruby
+# https://www.codewars.com/kata/is-this-a-triangle
 
 def isTriangle(a,b,c)
   sorted = [a,b,c].sort

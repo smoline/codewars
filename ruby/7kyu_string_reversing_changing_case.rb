@@ -1,4 +1,4 @@
-# https://www.codewars.com/kata/string-reversing-changing-case-etc/train/ruby
+# https://www.codewars.com/kata/string-reversing-changing-case-etc
 
 require 'ap'
 

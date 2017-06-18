@@ -1,4 +1,4 @@
-# https://www.codewars.com/kata/two-to-one/train/ruby
+# https://www.codewars.com/kata/two-to-one
 
 require 'ap'
 
