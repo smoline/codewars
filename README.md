@@ -9,7 +9,7 @@ My Ruby and JavaScript coding practice - CodeWars
   * Breaking Chocolate Problem
   * Distinct Digit Year
   * Don't Give Me Five
-  * Especially Joyfull Numbers
+  * Especially Joyful Numbers
   * Exes and Ohs
   * Fizz Buzz Cuckoo Clock
   * How Many Points
@@ -34,6 +34,7 @@ My Ruby and JavaScript coding practice - CodeWars
   * Last
   * Lightsabers
   * Love you not
+  * Mr Freeze
   * Multiply
   * Opposites Attract
   * String Uppercase
