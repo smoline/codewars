@@ -26,3 +26,16 @@ ap answer
 answer = createPhoneNumber([7, 8, 3, 5, 6, 1, 2, 4, 6, 2])
 ap answer
 # => returns "(783) 561-2462"
+
+# And Another Way
+def createPhoneNumber(numbers)
+  '(%d%d%d) %d%d%d-%d%d%d%d' % numbers
+end
+
+answer = createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+ap answer
+# => returns "(123) 456-7890"
+
+answer = createPhoneNumber([7, 8, 3, 5, 6, 1, 2, 4, 6, 2])
+ap answer
+# => returns "(783) 561-2462"
