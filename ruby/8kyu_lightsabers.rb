@@ -15,3 +15,8 @@ describe "Solution" do
     Test.assert_not_equals(howManyLightsabersDoYouOwn("Todd"), 5)
   end
 end
+
+# Another Way
+def howManyLightsabersDoYouOwn(name="")
+  return name.downcase == "zach" ? 18 : 0
+end
