@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/how-many-points-did-the-teams-from-los-angeles-score/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def get_los_angeles_points(results)
   total_score = 0
@@ -33,6 +33,7 @@ basketball_results = [
 ]
 answer = get_los_angeles_points(basketball_results)
 ap answer
+# 1023
 
 mexican_leaguers = [
   ["Lost Angeles", "559:503"],
@@ -53,3 +54,4 @@ mexican_leaguers = [
   ]
   answer = get_los_angeles_points(mexican_leaguers)
   ap answer
+  # 0

@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/ensure-question
-require 'ap'
+require 'awesome_print'
 
 def ensure_question(string)
   if string.include? "?"

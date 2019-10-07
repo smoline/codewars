@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/two-to-one
 
-require 'ap'
+require 'awesome_print'
 
 def longest(string1, string2)
   longest_string = ()

@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/multiples-of-3-and-5/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 class Array; def sum; self.inject(0, :+); end; end
 def solution(number)
@@ -34,14 +34,17 @@ ap answer
 number = 50
 answer = solution(number)
 ap answer
+# 543
 
 number = 100
 answer = solution(number)
 ap answer
+# 2318
 
 number = 203
 answer = solution(number)
 ap answer
+# 9569
 
 # Another Way
 def solution(number)
@@ -56,11 +59,14 @@ ap answer
 number = 50
 answer = solution(number)
 ap answer
+# 543
 
 number = 100
 answer = solution(number)
 ap answer
+# 2318
 
 number = 203
 answer = solution(number)
 ap answer
+# 9569

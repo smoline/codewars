@@ -1,6 +1,6 @@
 # https://www.codewars.com/trainer/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def comp(array1, array2)
   return false if array1.nil? || array2.nil?

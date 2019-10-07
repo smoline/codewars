@@ -1,13 +1,19 @@
 # https://www.codewars.com/kata/multiply/train/ruby
 
+require 'awesome_print'
+
 def multiply(a, b)
   a * b
 end
 
-describe "multiply" do
-  it "should test multiply" do
-    Test.assert_equals(multiply(8,2), 16, "This test should multipy the 2 given numbers together")
-    Test.assert_equals(multiply(7,6), 42, "This test should multipy the 2 given numbers together")
-    Test.assert_equals(multiply(5,6), 30, "This test should multipy the 2 given numbers together")
-  end
-end
+answer = multiply(8, 2)
+ap answer 
+# 16
+
+answer = multiply(7, 6)
+ap answer 
+# 42
+
+answer = multiply(5, 6)
+ap answer 
+# 30

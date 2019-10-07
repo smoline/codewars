@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/change-machine/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def change(cents)
   return { 25 => 0, 10 => 0, 5 => 0, 1 => 0 } if cents < 0
@@ -18,11 +18,11 @@ end
 
 answer = change(31)
 ap answer
-# => { 25 => 1, 10 => 0, 5 => 1, 1 => 1 }
+# { 25 => 1, 10 => 0, 5 => 1, 1 => 1 }
 
 answer = change(51)
 ap answer
-# => { 25 => 2, 10 => 0, 5 => 0, 1 => 1 }
+# { 25 => 2, 10 => 0, 5 => 0, 1 => 1 }
 
 # Another Way
 def change(cents)
@@ -34,11 +34,11 @@ end
 
 answer = change(31)
 ap answer
-# => { 25 => 1, 10 => 0, 5 => 1, 1 => 1 }
+# { 25 => 1, 10 => 0, 5 => 1, 1 => 1 }
 
 answer = change(51)
 ap answer
-# => { 25 => 2, 10 => 0, 5 => 0, 1 => 1 }
+# { 25 => 2, 10 => 0, 5 => 0, 1 => 1 }
 
 # Another Solution
 def change(cents)
@@ -48,8 +48,8 @@ end
 
 answer = change(31)
 ap answer
-# => { 25 => 1, 10 => 0, 5 => 1, 1 => 1 }
+# { 25 => 1, 10 => 0, 5 => 1, 1 => 1 }
 
 answer = change(51)
 ap answer
-# => { 25 => 2, 10 => 0, 5 => 0, 1 => 1 }
+# { 25 => 2, 10 => 0, 5 => 0, 1 => 1 }

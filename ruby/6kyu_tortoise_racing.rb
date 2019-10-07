@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def race(v1, v2, g)
   if v1 >= v2

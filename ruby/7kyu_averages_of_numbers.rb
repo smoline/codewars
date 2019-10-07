@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/averages-of-numbers/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def averages(array)
   index = 0

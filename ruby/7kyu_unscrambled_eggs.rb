@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/unscrambled-eggs/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def unscramble_eggs(word)
   index = 0
@@ -20,22 +20,24 @@ end
 word = "ceggodegge heggeregge"
 answer = unscramble_eggs(word)
 ap answer
-# code here
+# "code here"
 
 word = "FeggUNegg KeggATeggA"
 answer = unscramble_eggs(word)
 ap answer
+# "FUN KATA"
 
 # another way
-def unscramble_eggs(word)
+def unscramble_eggs2(word)
   word.gsub(/egg/,"")
 end
 
 word = "ceggodegge heggeregge"
-answer = unscramble_eggs(word)
+answer = unscramble_eggs2(word)
 ap answer
-# code here
+# "code here"
 
 word = "FeggUNegg KeggATeggA"
-answer = unscramble_eggs(word)
+answer = unscramble_eggs2(word)
 ap answer
+# "FUN KATA"

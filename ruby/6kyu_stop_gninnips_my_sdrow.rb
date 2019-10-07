@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/stop-gninnips-my-sdrow/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def spinWords(string)
   array = string.split(" ")

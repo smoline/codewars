@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/simple-fun-number-182-happy-g/train/ruby
-require 'ap'
+require 'awesome_print'
 
 # Simple Fun #182: Happy "g"
 

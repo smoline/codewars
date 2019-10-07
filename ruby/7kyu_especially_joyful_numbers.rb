@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/especially-joyful-numbers/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def number_joy(n)
   sum_of = 0

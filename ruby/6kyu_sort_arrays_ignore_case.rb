@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/sort-arrays-ignoring-case/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def sortme(names)
   return names.sort_by(&:downcase)

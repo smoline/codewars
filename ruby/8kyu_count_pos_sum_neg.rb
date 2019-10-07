@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def count_positives_sum_negatives(lst)
   count = 0
@@ -18,3 +18,4 @@ end
 lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]
 count_sum = count_positives_sum_negatives(lst)
 ap count_sum
+# [10, -65]

@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/can-santa-save-christmas/train/ruby
 
-require "ap"
+require 'awesome_print'
 
 # Can Santa save Christmas?
 def determineTime(durations)

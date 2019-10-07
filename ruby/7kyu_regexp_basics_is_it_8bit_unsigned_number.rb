@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/regexp-basics-is-it-a-eight-bit-unsigned-number/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 class String
   def eight_bit_number?

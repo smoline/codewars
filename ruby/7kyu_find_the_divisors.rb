@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/find-the-divisors/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def divisors(n)
   result = []

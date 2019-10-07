@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/regex-password-validation/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def validate_password(password)
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/ === password ||

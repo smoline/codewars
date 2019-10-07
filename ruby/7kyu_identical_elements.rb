@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/identical-elements/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def duplicate_elements(m, n)
   m.each do |element|

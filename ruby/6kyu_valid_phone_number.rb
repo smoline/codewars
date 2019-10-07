@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/valid-phone-number/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def validPhoneNumber(phoneNumber)
   if phoneNumber.match (/[a-z]/)

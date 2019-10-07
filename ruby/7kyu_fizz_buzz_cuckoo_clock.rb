@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/fizz-buzz-cuckoo-clock/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def fizz_buzz_cuckoo_clock(time)
   array = time.split(':')

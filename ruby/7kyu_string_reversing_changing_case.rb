@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/string-reversing-changing-case-etc
 
-require 'ap'
+require 'awesome_print'
 
 def reverse_and_mirror(string1,string2)
   string2.reverse.swapcase + "@@@" + string1.reverse.swapcase + string1.swapcase

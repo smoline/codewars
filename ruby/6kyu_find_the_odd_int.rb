@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/find-the-odd-int/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def find_it(seq)
   seq.detect { |n| seq.count(n).odd? }

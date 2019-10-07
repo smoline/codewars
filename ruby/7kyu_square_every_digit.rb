@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/square-every-digit/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def square_digits(num)
   new_array = num.to_s.chars

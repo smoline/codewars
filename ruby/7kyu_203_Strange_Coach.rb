@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/simple-fun-number-203-strange-coach
 
-require 'ap'
+require 'awesome_print'
 
 def strange_coach(players)
   first_initials = players.map { |player| player [0] }.uniq

@@ -1,5 +1,7 @@
 # https://www.codewars.com/kata/how-many-lightsabers-do-you-own/train/ruby
 
+require 'awesome_print'
+
 def howManyLightsabersDoYouOwn(name = '')
   if name == "Zach"
     return 18
@@ -7,16 +9,19 @@ def howManyLightsabersDoYouOwn(name = '')
   return 0
 end
 
-describe "Solution" do
-  it "should test for how_many_lightsabers" do
-    Test.assert_equals(howManyLightsabersDoYouOwn("Zach"), 18)
-    Test.assert_equals(howManyLightsabersDoYouOwn("Alex"), 0)
-    Test.assert_equals(howManyLightsabersDoYouOwn("Mary"), 0)
-    Test.assert_not_equals(howManyLightsabersDoYouOwn("Todd"), 5)
-  end
-end
-
 # Another Way
-def howManyLightsabersDoYouOwn(name="")
+def howManyLightsabersDoYouOwn2(name = '')
   return name.downcase == "zach" ? 18 : 0
 end
+
+answer = howManyLightsabersDoYouOwn(name = 'Zach')
+ap answer
+# 18
+
+answer = howManyLightsabersDoYouOwn2(name = 'Zach')
+ap answer
+# 18
+
+answer = howManyLightsabersDoYouOwn(name = 'Alex')
+ap answer
+# 0

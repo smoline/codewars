@@ -1,7 +1,8 @@
 # https://www.codewars.com/kata/decode-the-morse-code/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
+# NOT WORKING
 # def decodeMorse(morseCode)
 #   array = morseCode.strip.split("   ")
 #   new_array = array.map do |w|
@@ -56,16 +57,16 @@ require 'ap'
 #     word.join
 #     ap word
 # end
-#
+
 # answer = decodeMorse('.... . -.--   .--- ..- -.. .')
 # ap answer
 # # 'HEY JUDE'
-#
+
 # answer = decodeMorse('...---...')
 # ap answer
 # # 'SOS'
 
-def decodeMorse(morseCode)
+def decodeMorse2(morseCode)
   letters = []
   words = []
   word = ""
@@ -75,7 +76,6 @@ def decodeMorse(morseCode)
     letters[i] = x.split(" ")
   end
 
-  puts letters[0].length
   0.upto(letters.length-1) do |i|
     word = ""
     0.upto(letters[i].length-1) do |x|
@@ -126,23 +126,23 @@ def decodeMorse(morseCode)
   words.join(" ")
 end
 
-answer = decodeMorse('.... . -.--   .--- ..- -.. .')
+answer = decodeMorse2('.... . -.--   .--- ..- -.. .')
 ap answer
 # 'HEY JUDE'
 
-answer = decodeMorse('...---...')
+answer = decodeMorse2('...---...')
 ap answer
 # 'SOS'
 
-# # Another Way
-# def decodeMorse(morseCode)
+# # Another Way (NOT WORKING)
+# def decodeMorse3(morseCode)
 #   morseCode.strip.split("   ").map { |w| w.split(" ").map { |c| MORSE_CODE[c] }.join }.join(" ")
 # end
-#
-# answer = decodeMorse('.... . -.--   .--- ..- -.. .')
+
+# answer = decodeMorse3('.... . -.--   .--- ..- -.. .')
 # ap answer
 # # 'HEY JUDE'
-#
-# answer = decodeMorse('...---...')
+
+# answer = decodeMorse3('...---...')
 # ap answer
 # # 'SOS'

@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/last/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def last(*list, x)
   ap "list = #{list}"
@@ -17,12 +17,16 @@ end
 
 answer = last([1,2,3,4,5])
 ap answer
+# 5
 
 answer = last("abcde")
 ap answer
+# "e"
 
 answer = last(1, "b", 3, "d", 5)
 ap answer
+# 5
 
 answer = last(5)
 ap answer
+# 5

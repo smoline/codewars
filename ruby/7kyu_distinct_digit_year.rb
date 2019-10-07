@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/simple-fun-number-144-distinct-digit-year/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def distinct_digit_year(year)
   num = year + 1

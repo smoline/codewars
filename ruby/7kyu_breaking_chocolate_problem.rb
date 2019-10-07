@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/breaking-chocolate-problem/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 def break_chocolate(n, m)
   if n > m

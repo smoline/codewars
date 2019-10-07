@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/string-average/train/ruby
 
-require 'ap'
+require 'awesome_print'
 
 class Array; def sum; self.inject(0, :+); end; end
 def average_string(s)
