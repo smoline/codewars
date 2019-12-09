@@ -30,3 +30,11 @@ function getCount1(str) {
 
 console.log(getCount1("abracadabra"))
 // 5
+
+// another way
+function getCount2(str) {
+  return (str.match(/[aeiou]/ig) || []).length;
+}
+
+console.log(getCount1("abracadabra"))
+// 5
