@@ -35,3 +35,5 @@ console.log(binaryArrayToNumber([1, 1, 1, 1]))
 console.log(binaryArrayToNumber([0, 1, 1, 0]))
 // 6
 
+// another way
+const binaryArrayToNumber = arr => parseInt(arr.join(''), 2);
