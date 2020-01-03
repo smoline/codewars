@@ -48,9 +48,21 @@ ap choose_best_sum(230, 3, ys)
 # 228
 
 # another way
-def choose_best_sum(t, k, ls)
+def choose_best_sum1(t, k, ls)
   ls.combination(k)
     .map{|path| path.inject(:+)}
     .select{|sum| sum <= t}
     .max
 end
+
+ts = [50, 55, 56, 57, 58]
+ap choose_best_sum1(163, 3, ts)
+# 163
+
+xs = [50]
+ap choose_best_sum1(163, 3, xs)
+# nil
+
+ys = [91, 74, 73, 85, 73, 81, 87]
+ap choose_best_sum1(230, 3, ys)
+# 228
