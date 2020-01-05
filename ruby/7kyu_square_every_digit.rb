@@ -23,7 +23,7 @@ answer = square_digits(1111)
 ap answer
 # 1111
 
-answer = square_digits(1234321)
+answer = square_digits(1_234_321)
 ap answer
 # 14916941
 

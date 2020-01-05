@@ -3,11 +3,8 @@
 require 'awesome_print'
 
 def solution(nums)
-  if nums.nil?
-    return []
-  else
-    return nums.sort
-  end
+  return [] if nums.nil?
+  return nums.sort
 end
 
 answer = solution([1, 2, 10, 50, 5])

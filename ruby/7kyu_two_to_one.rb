@@ -6,7 +6,7 @@ def longest(string1, string2)
   longest_string = ()
   array1 = (string1.chars + string2.chars).sort
   array1.each do |char|
-    if longest_string == nil
+    if longest_string.nil?
       longest_string = char
     end
     unless longest_string.include?(char)

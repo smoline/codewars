@@ -58,55 +58,55 @@ ap answer
 
 # Another Way
 class String
-  def eight_bit_number?
+  def eight_bit_number2?
     /\A(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\z/ === self
   end
 end
 
-answer = "".eight_bit_number?
+answer = "".eight_bit_number2?
 ap answer
 # false
 
-answer = "0".eight_bit_number?
+answer = "0".eight_bit_number2?
 ap answer
 # true
 
-answer = "00".eight_bit_number?
+answer = "00".eight_bit_number2?
 ap answer
 # false
 
-answer = "55".eight_bit_number?
+answer = "55".eight_bit_number2?
 ap answer
 # true
 
-answer = "042".eight_bit_number?
+answer = "042".eight_bit_number2?
 ap answer
 # false
 
-answer = "123".eight_bit_number?
+answer = "123".eight_bit_number2?
 ap answer
 # true
 
-answer = "255".eight_bit_number?
+answer = "255".eight_bit_number2?
 ap answer
 # true
 
-answer = "256".eight_bit_number?
+answer = "256".eight_bit_number2?
 ap answer
 # false
 
-answer = "999".eight_bit_number?
+answer = "999".eight_bit_number2?
 ap answer
 # false
 
-answer = "2 55".eight_bit_number?
+answer = "2 55".eight_bit_number2?
 ap answer
 # false
 
-answer = "-255".eight_bit_number?
+answer = "-255".eight_bit_number2?
 ap answer
 # false
 
-answer = "+255".eight_bit_number?
+answer = "+255".eight_bit_number2?
 ap answer
 # false

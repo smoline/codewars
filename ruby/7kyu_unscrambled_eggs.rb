@@ -10,7 +10,7 @@ def unscramble_eggs(word)
     if ["a","e","i","o","u"," ","A","E","I","O","U"].include?(array[index])
       index += 1
     else
-      array.slice!(index+1, 3)
+      array.slice!(index + 1, 3)
       index += 1
     end
   end
