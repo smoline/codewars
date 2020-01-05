@@ -25,18 +25,18 @@ ap answer
 # "This is rehtona test"
 
 # Another Way
-def spinWords(string)
+def spinWords1(string)
   string.gsub(/\w{5,}/, &:reverse)
 end
 
-answer = spinWords("Hey fellow warriors")
+answer = spinWords1("Hey fellow warriors")
 ap answer
 # "Hey wollef sroirraw"
 
-answer = spinWords( "This is a test")
+answer = spinWords1( "This is a test")
 ap answer
 # "This is a test"
 
-answer = spinWords( "This is another test" )
+answer = spinWords1( "This is another test" )
 ap answer
 # "This is rehtona test"
