@@ -15,13 +15,13 @@ def duck_duck_goose(players, goose)
 end
 
 def create_player_objects(names_array)
-  player = Struct.new(:name) 
+  player = Struct.new(:name)
   names_array.map do |name|
     player.new(name)
   end
 end
 
-PLAYERS = create_player_objects(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'])
+PLAYERS = create_player_objects(%w[a b c d e f g h i j k l])
 
 answer = duck_duck_goose(PLAYERS, 1)
 ap answer

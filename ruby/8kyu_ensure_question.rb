@@ -2,11 +2,8 @@
 require 'awesome_print'
 
 def ensure_question(string)
-  if string.include? "?"
-    return string
-  else
-    return string + "?"
-  end
+  return string if string.include? "?"
+  return string + "?"
 end
 
 answer = ensure_question("Yes")
@@ -17,14 +14,14 @@ answer = ensure_question("No?")
 ap answer
 # => "No?"
 
-def ensure_question(string)
+def ensure_question1(string)
   string.end_with?("?") ? string : string + "?"
 end
 
-answer = ensure_question("kitty")
+answer = ensure_question1("kitty")
 ap answer
 # => "kitty?"
 
-answer = ensure_question("No?")
+answer = ensure_question1("No?")
 ap answer
 # => "No?"

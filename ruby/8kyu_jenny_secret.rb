@@ -3,11 +3,8 @@
 require 'awesome_print'
 
 def greet(name)
-  if name == 'Johnny'
-    return "Hello, my love!"
-  else
-    return "Hello, #{name}!"
-  end
+  return "Hello, my love!" if name == 'Johnny'
+  return "Hello, #{name}!"
 end
 
 answer = greet('Johnny')
