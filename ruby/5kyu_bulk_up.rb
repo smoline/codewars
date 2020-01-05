@@ -11,14 +11,14 @@
 # In case you didn't know every gram of protein and carbohydrate has 4 calories, while 1 gram of fat provides 9 calories.
 
 # An object food (in Ruby $food ) is preloaded for you that contains the information about the given food per 100 grams:
-# $food = { 
+# $food = {
 #   "chicken" => [20, 5, 10], # per 100g chicken has 20g of protein, 5 grams of carbohydrates and 10 grams of fat.
 #   "eggs" => [10, 5, 15],    # protein:10g , carbs:5g , fats: 15g
-#   "salmon" => [27, 0, 10], 
-#   "beans" => [8, 25, 0], 
-#   "bananas" => [1, 23, 0], 
-#   ... 
-#   ... 
+#   "salmon" => [27, 0, 10],
+#   "beans" => [8, 25, 0],
+#   "bananas" => [1, 23, 0],
+#   ...
+#   ...
 # }
 
 # Round your results to 2 decimal places and return a string in the form "Total proteins: n grams, Total calories: n".
@@ -28,14 +28,14 @@ require 'awesome_print'
 
 def bulk(arr)
   p = 0; c = 0
-  if arr!=[]
-    (0..arr.length-1).each do |i|
+  if arr != []
+    (0..arr.length - 1).each do |i|
       items = arr[i].split(",")
-      (0..items.length-1).each do |item|
+      (0..items.length - 1).each do |item|
         unit = items[item].split("g ")
-        units = unit[0].to_f/100
+        units = unit[0].to_f / 100
         protein = units * $food[unit[1]][0]
-        carbohydrate  = units * $food[unit[1]][1]
+        carbohydrate = units * $food[unit[1]][1]
         fat = units * $food[unit[1]][2]
         p += protein
         c += (protein * 4) + (carbohydrate * 4) + (fat * 9)
@@ -54,9 +54,7 @@ $food = {
   "eggs" => [10, 5, 15],    # protein:10g , carbs:5g , fats: 15g
   "salmon" => [27, 0, 10],
   "beans" => [8, 25, 0],
-  "bananas" => [1, 23, 0],
-  ...
-  ...
+  "bananas" => [1, 23, 0]
 }
 
 a = ["175g pork, 100g eggs, 25g chocolate", "175g goose, 200g cheddar, 250g milk, 300g kiwi", "100g catfish, 125g parmesan, 75g chocolate, 125g watermelon", "125g chicken, 25g beans, 50g lemons"]
