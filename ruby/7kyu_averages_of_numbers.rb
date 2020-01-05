@@ -9,11 +9,11 @@ def averages(array)
     while index < array.count - 1
       num1 = array.fetch(index)
       num2 = array.fetch(index + 1)
-      if (num1 + num2) % 2 == 0
-        new_num = (num1 + num2) / 2
-      else
-        new_num = ((num1 + num2).to_f / 2)
-      end
+      new_num = if (num1 + num2) % 2 == 0
+                  (num1 + num2) / 2
+                else
+                  ((num1 + num2).to_f / 2)
+                end
       new_array << new_num
       index += 1
     end

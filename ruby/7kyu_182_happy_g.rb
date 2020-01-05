@@ -6,11 +6,8 @@ require 'awesome_print'
 def happy_g(s)
   array = s.chars
   array.each_with_index do |char, index|
-    if char == "g" && array[index + 1] != "g" && array[index - 1] != "g"
-      return false
-    elsif index == 0 && char == "g" && array[index + 1] != "g"
-      return false
-    end
+    return false if char == "g" && array[index + 1] != "g" && array[index - 1] != "g"
+    return false if index == 0 && char == "g" && array[index + 1] != "g"
   end
   return true
 end

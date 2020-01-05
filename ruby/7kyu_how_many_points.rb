@@ -51,7 +51,7 @@ mexican_leaguers = [
   ["Los Guardianos Angeles", "641:637"],
   ["Los angeles", "315:318"],
   ["losAngeles", "433:454"]
-  ]
-  answer = get_los_angeles_points(mexican_leaguers)
-  ap answer
-  # 0
+]
+answer = get_los_angeles_points(mexican_leaguers)
+ap answer
+# 0

@@ -44,7 +44,7 @@ ap answer
 
 def rank_of_element2(array,i)
   elements_to_left = array[0...i]
-  elements_to_right = array[i+1..-1]
+  elements_to_right = array[i + 1..-1]
   count_left = elements_to_left.count { |element| element <= array[i] }
   count_right = elements_to_right.count { |element| element < array[i] }
 
@@ -73,7 +73,7 @@ ap answer
 
 def rank_of_element3(array,i)
   array[0...i].count { |element| element <= array[i] } +
-  array[i+1..-1].count { |element| element < array[i] }
+  array[i + 1..-1].count { |element| element < array[i] }
 end
 
 answer = rank_of_element3([2, 1, 2, 1, 2],2)

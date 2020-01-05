@@ -28,7 +28,7 @@ ap answer
 
 # Another Way
 def incrementer2(nums)
-  nums.map.with_index(1){|num, idx| (num+idx)%10}
+  nums.map.with_index(1){|num, idx| (num + idx) % 10}
 end
 
 answer = incrementer2([])

@@ -4,16 +4,13 @@ require 'awesome_print'
 
 def divisors(n)
   result = []
-  2.upto(n-1) do |i|
+  2.upto(n - 1) do |i|
     if n % i == 0
       result.push(i)
     end
   end
-  if result.length == 0
-    return "#{n} is prime"
-  else
-    return result
-  end
+  return "#{n} is prime" if result.length == 0
+  return result
 end
 
 answer = divisors(15)

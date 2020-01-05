@@ -39,7 +39,7 @@ ap answer
 
 # Another Solution
 def filter_list3(l)
-l.select{|i| i.is_a?(Integer)}
+  l.select{|i| i.is_a?(Integer)}
 end
 
 answer = filter_list3([1,2,'a','b'])

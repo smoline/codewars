@@ -4,11 +4,11 @@ require 'awesome_print'
 
 def filter_lucky(list)
   newarray = []
-  list.collect { |num|
+  list.collect do |num|
     if num.to_s.include? "7"
       newarray << num
     end
-  }
+  end
   return newarray
 end
 
