@@ -2,7 +2,7 @@
 
 require 'awesome_print'
 
-class Array; def sum; self.inject(0, :+); end; end
+# class Array; def sum; self.inject(0, :+); end; end
 def solution(number)
   array = []
   (0...number).each do |num|
@@ -12,8 +12,8 @@ def solution(number)
       array << num
     end
   end
-    array.uniq!
-    return array.sum
+  array.uniq!
+  return array.sum
 end
 
 # TDD
@@ -47,26 +47,26 @@ ap answer
 # 9569
 
 # Another Way
-def solution(number)
-  (1...number).select {|i| i%3==0 || i%5==0}.inject(:+)
+def solution1(number)
+  (1...number).select {|i| i % 3 == 0 || i % 5 == 0}.inject(:+)
 end
 
 number = 10
-answer = solution(number)
+answer = solution1(number)
 ap answer
 # 23
 
 number = 50
-answer = solution(number)
+answer = solution1(number)
 ap answer
 # 543
 
 number = 100
-answer = solution(number)
+answer = solution1(number)
 ap answer
 # 2318
 
 number = 203
-answer = solution(number)
+answer = solution1(number)
 ap answer
 # 9569

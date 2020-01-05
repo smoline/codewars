@@ -1,7 +1,7 @@
 require 'awesome_print'
 
 def count_bits(n)
-    n.to_s(2).chars.count("1")
+  n.to_s(2).chars.count("1")
 end
 
 answer = count_bits(5)

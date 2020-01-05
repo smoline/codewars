@@ -30,7 +30,7 @@ ap answer
 def palindrome1(string)
   stringForward = string.gsub(/\W/,"").downcase
   stringReverse = ""
-  (stringForward.length-1).downto(0) {|x| stringReverse += stringForward[x]}
+  (stringForward.length - 1).downto(0) {|x| stringReverse += stringForward[x]}
   stringForward == stringReverse
 end
 
