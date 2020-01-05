@@ -18,19 +18,12 @@ require 'awesome_print'
 
 def how_much_i_love_you(nb_petals)
   total = nb_petals % 6
-  if total == 1
-    return "I love you"
-  elsif total == 2
-    return "a little"
-  elsif total == 3
-    return "a lot"
-  elsif total == 4
-    return "passionately"
-  elsif total == 5
-    return "madly"
-  elsif total == 0
-    return "not at all"
-  end
+  return "I love you" if total == 1
+  return "a little" if total == 2
+  return "a lot" if total == 3
+  return "passionately" if total == 4
+  return "madly" if total == 5
+  return "not at all" if total == 0
 end
 
 answer = how_much_i_love_you(36)

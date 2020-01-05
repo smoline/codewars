@@ -2,23 +2,23 @@
 
 require 'awesome_print'
 class String
-  def is_upcase?
+  def upcase?
     chars.all? { |char| char.upcase == char }
   end
 end
 
-answer = "c".is_upcase?
+answer = "c".upcase?
 ap answer
 # false
 
-answer = "HELLO".is_upcase?
+answer = "HELLO".upcase?
 ap answer
 # true
 
-answer = "hello".is_upcase?
+answer = "hello".upcase?
 ap answer
 # false
 
-answer = "Hello".is_upcase?
+answer = "Hello".upcase?
 ap answer
 # false

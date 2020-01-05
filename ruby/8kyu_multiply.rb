@@ -7,13 +7,13 @@ def multiply(a, b)
 end
 
 answer = multiply(8, 2)
-ap answer 
+ap answer
 # 16
 
 answer = multiply(7, 6)
-ap answer 
+ap answer
 # 42
 
 answer = multiply(5, 6)
-ap answer 
+ap answer
 # 30
