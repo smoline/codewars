@@ -4,7 +4,7 @@ require 'awesome_print'
 
 class String
   def eight_bit_number?
-    self.match(/^([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])$/) ? true : false
+    match(/^([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])$/) ? true : false
   end
 end
 
